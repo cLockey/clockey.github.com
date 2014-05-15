@@ -4,7 +4,7 @@
   <title><![CDATA[cLockey]]></title>
   <link href="http://cLockey.github.io/atom.xml" rel="self"/>
   <link href="http://cLockey.github.io/"/>
-  <updated>2014-05-15T11:21:31+08:00</updated>
+  <updated>2014-05-15T12:01:47+08:00</updated>
   <id>http://cLockey.github.io/</id>
   <author>
     <name><![CDATA[cLockey]]></name>
@@ -14,19 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://cLockey.github.io/blog/2014/05/15/test.markdown/"/>
-    <updated>2014-05-15T09:59:03+08:00</updated>
-    <id>http://cLockey.github.io/blog/2014/05/15/test.markdown</id>
-    <content type="html"><![CDATA[]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
+    <title type="html"><![CDATA[测试]]></title>
     <link href="http://cLockey.github.io/blog/2014/05/15/test/"/>
     <updated>2014-05-15T09:59:03+08:00</updated>
     <id>http://cLockey.github.io/blog/2014/05/15/test</id>
-    <content type="html"><![CDATA[<p>testtesttesttesttesttest</p>
+    <content type="html"><![CDATA[<p>测试一下</p>
 ]]></content>
   </entry>
   
