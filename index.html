@@ -9,8 +9,7 @@
 	<meta name="author" content="cLockey">
 
 	
-	<meta name="description" content=" May 15th, 2014 测试 测试一下 Blog Archives
-">
+	<meta name="description" content="May 17th, 2014 Windows程序设计笔记_消息 大部分情况下，只需要处理光标移动键的WM_KEYDOWN消息，有时候需要处理Insert键和Delete键的WM_KEYDOWN消息。当使用这些键时，可以通过GetKeyState函数检查Shift键和Ctrl键的状态。 例如， &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -102,15 +101,22 @@
   
 
 
-<time datetime="2014-05-15T09:59:03+08:00" data-updated="true" itemprop="datePublished">May 15<span>th</span>, 2014</time></div>
+<time datetime="2014-05-17T08:56:33+08:00" data-updated="true" itemprop="datePublished">May 17<span>th</span>, 2014</time></div>
 		<div class="tags">
 
 </div>
 		
 	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2014/05/15/test/" itemprop="url">测试</a></h1>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/17/Windows_Message/" itemprop="url">Windows程序设计笔记_消息</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>测试一下</p>
+		<p>大部分情况下，只需要处理光标移动键的WM_KEYDOWN消息，有时候需要处理Insert键和Delete键的WM_KEYDOWN消息。当使用这些键时，可以通过GetKeyState函数检查Shift键和Ctrl键的状态。</p>
+
+
+<p>例如，Windows程序经常使用Shift键和光标键的组合来扩大字处理文档中的选中范围。Ctrl键常用语改变光标键的意义。例如，Ctrl键和右箭头键的组合用于将光标右移一个单词。</p>
+
+
+<p>决定如何在程序中使用键盘的一种好方法是，调查在当前流行的Windows程序中如何使用键盘。</p>
+
 
 		
 		
