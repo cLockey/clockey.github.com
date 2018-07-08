@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://cLockey.github.io/sitemap.xml 
