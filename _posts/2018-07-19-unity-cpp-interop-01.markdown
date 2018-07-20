@@ -28,13 +28,13 @@ tags:
 
 在VS中新建C++项目，这里理应选择DLL，但是建议先选成控制台，等我们编写的函数先在控制台调试没问题后可以在项目属性中改为DLL。
 
-![新建C++项目](..\img\in-post\unity-cpp-interop-1\01-cpp-new-project.jpg)
+![新建C++项目](/img/in-post/unity-cpp-interop-1/01-cpp-new-project.jpg)/
 
-![修改项目属性](..\img\in-post\unity-cpp-interop-1\02-change-to-dll.jpg)
+![修改项目属性](/img/in-post/unity-cpp-interop-1/02-change-to-dll.jpg)
 
 **2.新建一个类Bridge.h和Bridge.cpp**
 
-![新建Bridge类](..\img\in-post\unity-cpp-interop-1\03-new-class.jpg)
+![新建Bridge类](/img/in-post/unity-cpp-interop-1/03-new-class.jpg)
 
 ```c++
 //Bridge.h
@@ -73,7 +73,7 @@ extern "C"
 
 右键项目生成DLL后，将DLL拷贝到Unity项目中。
 
-![拷贝DLL](..\img\in-post\unity-cpp-interop-1\04-copy-dll-to-unity.jpg)
+![拷贝DLL](/img/in-post/unity-cpp-interop-1/04-copy-dll-to-unity.jpg)
 
 **4.在C#中调用DLL**
 
@@ -98,11 +98,11 @@ extern "C"
 
 其中由两个**extern**修饰的函数与C++中**Internal_Add()**函数对应，二者的区别在于是否指定了**EntryPoint**（入口），**EntryPoint**参数指明了从**UnityCppInterop.dll**中调用的函数名，如果未指定，则会调用与C#中函数名相同的C++函数。本例中，二者调用的是C++中的同一个函数，输出如下：
 
-![Demo输出](..\img\in-post\unity-cpp-interop-1\05-demo-print.jpg)
+![Demo输出](/img/in-post/unity-cpp-interop-1/05-demo-print.jpg)
 
 如果将**Add()**的**EntryPoint**删除，会报**EntryPointNotFoundException**异常：
 
-![去掉EntryPoint的输出](..\img\in-post\unity-cpp-interop-1\06-demo-print-exception.jpg)
+![去掉EntryPoint的输出](/img/in-post/unity-cpp-interop-1/06-demo-print-exception.jpg)
 
 
 
@@ -114,11 +114,11 @@ extern "C"
 
 勾选**Include C++ support**，一路下一步即可。
 
-![新建Android工程](..\img\in-post\unity-cpp-interop-1\07-android-new-projet.png)
+![新建Android工程](/img/in-post/unity-cpp-interop-1/07-android-new-projet.png)
 
 创建好后检查工程属性中是否指定了ndk路径：
 
-![QQ图片20180719172301](..\img\in-post\unity-cpp-interop-1\08-check-ndk.png)
+![QQ图片20180719172301](/img/in-post/unity-cpp-interop-1/08-check-ndk.png)
 
 修改**app的build.gradle**内容（供参考）如下：
 
@@ -168,7 +168,7 @@ dependencies {
 
 编译so可以使用**CMake**或**Android.mk**，本文介绍**CMake**，如果没有安装，可在Android Studio的SDK Tools中下载。将之前编写的C++文件拷贝到cpp目录下，最好将头文件和源文件分类，**native-lib.cpp**是新建工程时自动创建的，可以删掉：
 
-![项目结构](..\img\in-post\unity-cpp-interop-1\09-project-structure.png)
+![项目结构](/img/in-post/unity-cpp-interop-1/09-project-structure.png)
 
 **CMakeList.txt**
 
