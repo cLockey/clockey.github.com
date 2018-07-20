@@ -28,7 +28,7 @@ tags:
 
 在VS中新建C++项目，这里理应选择DLL，但是建议先选成控制台，等我们编写的函数先在控制台调试没问题后可以在项目属性中改为DLL。
 
-![新建C++项目](/img/in-post/unity-cpp-interop-1/01-cpp-new-project.jpg)/
+![新建C++项目](/img/in-post/unity-cpp-interop-1/01-cpp-new-project.jpg)
 
 ![修改项目属性](/img/in-post/unity-cpp-interop-1/02-change-to-dll.jpg)
 
@@ -38,6 +38,7 @@ tags:
 
 ```c++
 //Bridge.h
+
 #ifdef WIN32
 #ifdef	UNITY_CPP_INTEROP_DLL_BRIDGE
 #define UNITY_CPP_INTEROP_DLL_BRIDGE	__declspec(dllexport)
@@ -57,6 +58,7 @@ extern "C"
 
 ```c++
 //Bridge.cpp
+
 #include "Bridge.h"
 
 extern "C"
